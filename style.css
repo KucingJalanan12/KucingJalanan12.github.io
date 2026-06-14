@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f8f9fa;
+    padding:20px 50px;
 }
 
 h1 {
@@ -18,10 +19,13 @@ header{
     align-items:center;
     padding:20px 50px;
     background:white;
+    flex-direction: row;
 }
 
 nav a{
     text-decoration:none;
+    display: flex;
     margin-left:20px;
     color:black;
+    flex-direction: row;
 }
