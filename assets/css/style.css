@@ -1,8 +1,12 @@
+:root {
+    --black: #111111;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f8f9fa;
-    padding:20px 50px;
+    padding:20px 20px;
 }
 
 header {
@@ -17,16 +21,20 @@ header {
     min-height: 72px;
     padding: 6px 6px;
 
-    background: rgba(255, 255, 255, 0.93);
+    background: rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
 
     border-bottom: 1px solid #e5eaf0;
+    border-radius: 15px;
+    box-shadow: -3px 3px 10px -9px;
 }
 
 .home {
+    text-decoration: none   ;
     color: var(--black);
     font-size: 28px;
     font-weight: 700;
+    margin: 20px;
 }
 
 h1 {
@@ -37,10 +45,21 @@ p {
     font-family: "Libre Bodoni", serif;
 }
 
-nav a{
-    text-decoration:none;
+nav {
     display: flex;
-    margin:20px 5px;
+    gap: 0px;
+}
+
+nav a,
+nav a:visited{
+    text-decoration:none;
+    font-weight: 500;
+    padding: 7px 15px;
+    margin:3px 15px;
     color:black;
-    flex-direction: row;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(blue);
 }
